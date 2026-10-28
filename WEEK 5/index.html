@@ -111,9 +111,266 @@ button {
     <h1>Welcome to Tech Club</h1>
     <p>Learn technology, build projects and innovate together.</p>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+     <header>
+        <h1>Welcome to the Tech Club</h1>
+    </header>
+
+    <main>
+        <h2>Student Registration</h2>
+        <!-- Task 4.1: Basic Form Elements -->
+        <form action="#" method="POST">
+            <div>
+                <label for="student-name">Full Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+            </div>
+            <br>
+            <div>
+                <label for="student-email">Email Address:</label>
+                <input type="email" id="student-email" name="student-email" required>
+            </div>
+            <br>
+            <div>
+                <label for="student-password">Password:</label>
+                <input type="password" id="student-password" name="student-password" required>
+            </div>
+            <br>
+        </form>
+    </main>
+    <!-- Updated form section in index.html -->
+        <form action="#" method="POST">
+            <!-- Previous fields remain here -->
+            <div>
+                <label for="student-name">Full Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+            </div>
+            <br>
+            <div>
+                <label for="student-email">Email Address:</label>
+                <input type="email" id="student-email" name="student-email" required>
+            </div>
+            <br>
+            <div>
+                <label for="student-password">Password:</label>
+                <input type="password" id="student-password" name="student-password" required>
+            </div>
+            <br>
+
+            <!-- Task 4.2: Advanced Inputs -->
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+            <br>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <div>
+                <label>Interests:</label>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="designing" name="interests" value="designing">
+                <label for="designing">Designing</label>
+            </div>
+            <br>
+            <div>
+                <label for="year">Year of Study:</label>
+                <select id="year" name="year">
+                    <option value="1st-year">1st Year</option>
+                    <option value="2nd-year">2nd Year</option>
+                    <option value="3rd-year">3rd Year</option>
+                    <option value="4th-year">4th Year</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="message">Why do you want to join?</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+            </div>
+            <br>
+            <button type="submit">Submit Registration</button>
+        </form>
+
+    <!-- Added above the Form section in index.html -->
+        <h2>Upcoming Tech Club Events</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hackathon 2026</td>
+                    <td>November 15, 2026</td>
+                    <td>Main Lab 1</td>
+                </tr>
+                <tr>
+                    <td>Web Dev Workshop</td>
+                    <td>December 05, 2026</td>
+                    <td>Seminar Hall B</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Scheduled Events: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br><hr><br>
+
+<!-- Updated Head Section in index.html -->
+<head>
+    <!-- Task 4.4: Meta Tags & Favicon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Tech Club registration and event portal.">
+    <meta name="keywords" content="Tech Club, Programming, Coding Hackathon, Registration">
+    <link rel="icon" type="image/x-icon" href="https://flaticon.com">
+    
+    <title>Tech Club - Master Portal</title>
+</head>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Task 4.4: Meta Tags & Favicon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Tech Club registration and event portal.">
+    <meta name="keywords" content="Tech Club, Programming, Coding Hackathon, Registration">
+    <link rel="icon" type="image/x-icon" href="https://flaticon.com">
+    <title>Tech Club Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Tech Club Portal</h1>
+        <!-- Task 4.5: Global Navigation Link Menu -->
+        <nav>
+            <a href="index.html"><strong>Home</strong></a> | 
+            <a href="about.html"><strong>About Us</strong></a> | 
+            <a href="register.html"><strong>Register</strong></a> | 
+            <a href="contact.html"><strong>Contact</strong></a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <!-- Task 4.3: Tech Club Events Table -->
+        <h2>Upcoming Tech Club Events</h2>
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; max-width: 600px; text-align: left;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>💡 Hackathon 2026</td>
+                    <td>November 15, 2026</td>
+                    <td>Main Lab 1</td>
+                </tr>
+                <tr>
+                    <td>🌐 Web Dev Workshop</td>
+                    <td>December 05, 2026</td>
+                    <td>Seminar Hall B</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="font-weight: bold; background-color: #f9f9f9;">
+                    <td colspan="3">Total Scheduled Events: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><hr><br>
+
+        <!-- Task 4.1 & 4.2: Registration Form Section -->
+        <h2>Student Registration Form</h2>
+        <form action="#" method="POST">
+            
+            <!-- Task 4.1 Core Inputs -->
+            <div>
+                <label for="student-name">Full Name:</label><br>
+                <input type="text" id="student-name" name="student-name" placeholder="Enter full name" required>
+            </div>
+            <br>
+            <div>
+                <label for="student-email">Email Address:</label><br>
+                <input type="email" id="student-email" name="student-email" placeholder="example@domain.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="student-password">Password:</label><br>
+                <input type="password" id="student-password" name="student-password" required>
+            </div>
+            <br>
+
+            <!-- Task 4.2 Extended Inputs -->
+            <div>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+            <br>
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <div>
+                <label>Interests:</label><br>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="designing" name="interests" value="designing">
+                <label for="designing">Designing</label>
+            </div>
+            <br>
+            <div>
+                <label for="year">Year of Study:</label><br>
+                <select id="year" name="year">
+                    <option value="1st-year">1st Year</option>
+                    <option value="2nd-year">2nd Year</option>
+                    <option value="3rd-year">3rd Year</option>
+                    <option value="4th-year">4th Year</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="message">Queries/Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40" placeholder="Type your message here..."></textarea>
+            </div>
+            <br>
+            <button type="submit">Submit Registration</button>
+        </form>
+    </main>
+
+    <br><hr>
+    <footer>
+        <p>&copy; 2026 Tech Club Portal. All rights reserved.</p>
+    </footer>
     
     1. Blue represents trust, creativity and technology, making it suitable for a Tech Club.
 2. Dark navy gives the website a modern and professional appearance.
