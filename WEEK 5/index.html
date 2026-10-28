@@ -62,6 +62,47 @@ p {
     font-size: 16px;
     line-height: 1.7;
 }
+        :root {
+    --primary-color: #2563eb;
+    --secondary-color: #0f172a;
+    --accent-color: #38bdf8;
+    --background-color: #f1f5f9;
+    --text-color: #334155;
+    --card-color: #ffffff;
+    --spacing: 20px;
+    --border-radius: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+#hero {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--spacing);
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: var(--spacing);
+    margin: var(--spacing);
+    border-radius: var(--border-radius);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+}
     </style>
     
 </head>
